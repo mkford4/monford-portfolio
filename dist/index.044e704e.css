@@ -12098,6 +12098,10 @@ hr {
   color: var(--secondary-color);
 }
 
+nav {
+  float: right !important;
+}
+
 a.dropdown-item, .navbar-nav > .nav-item > .nav-link, .navbar-nav > .nav-item > .nav-link a:active {
   color: var(--primary-color);
 }
@@ -12115,6 +12119,10 @@ a.dropdown-item, .navbar-nav > .nav-item > .nav-link, .navbar-nav > .nav-item > 
 .navbar-nav > li > .dropdown-menu a:hover {
   background-color: var(--light-purple);
   color: var(--primary-color);
+}
+
+#resume-nav {
+  color: var(--dark-purple);
 }
 
 .material-icons {

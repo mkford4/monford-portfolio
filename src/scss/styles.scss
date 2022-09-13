@@ -117,6 +117,10 @@ hr {
 }
 
 // NAVBAR //
+nav {
+  float: right !important;
+}
+
 a.dropdown-item {
   color: var(--primary-color);
 }
@@ -140,6 +144,10 @@ a.dropdown-item {
 .navbar-nav>li>.dropdown-menu a:hover {
   background-color: var(--light-purple);
   color: var(--primary-color);
+}
+
+#resume-nav {
+  color: var(--dark-purple);
 }
 
 // MATERIAL ICONS // 
