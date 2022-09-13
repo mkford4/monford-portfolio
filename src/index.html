@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monika Ford Portfolio</title>
+
+  <link rel="icon" type="image/png" href="img/logos/mf_favicon.svg" sizes="16x16" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link rel="stylesheet" href="scss/styles.scss">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logos/monford.png" alt="Mon Ford Logo" width="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="html/webdev.html">Web Development</a></li>
+              <li><a class="dropdown-item" href="html/design.html">Graphic Design</a></li>
+              <li><a class="dropdown-item" href="html/photography.html">Photography</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container-fluid py-4 px-3 mx-auto text-center" id="home">
+      <h1 class="big">MONIKA FORD</h1>
+      <h2>web developer | graphic designer</h2>
+    </div>
+  </header>
+
+
+  <!-- ABOUT SECTION-->
+  <section id="about">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="text-center">ABOUT</h1>
+          <div class="row gx-4 py-4">
+            <div class="col-lg-5 p-2 text-center">
+              <img src="./img/photos/mkf_portrait.jpg" class="img-fluid rounded" alt="portrait of Monika">
+            </div>
+            <div class="col-lg-7 about-body">
+              <p>Hi, I’m Monika, a graphic designer and web developer based in Madison, Wisconsin.</p>
+              <p>As a visually detailed
+                and creative person, I’ve worked on a range of projects for small
+                organizations to build their brand identity and promote outreach. I enjoy the challenge and excitement
+                of
+                bringing a vision to life, whether it be a logo or website.</p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WORK SECTION-->
+  <section id="work">
+    <div class="container px-4 work">
+      <div class="row gx-4 justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1>VIEW PROJECTS</h1>
+          <div class="row py-4 px-3">
+            <div class="col-md">
+              <a href="./html/webdev.html">
+                <span class="material-icons work-icon">
+                  terminal
+                </span>
+                <h4 class="work-h4">Web Development</h4>
+              </a>
+            </div>
+            <div class="col-md">
+              <a href="./html/design.html">
+                <span class="material-icons work-icon">
+                  draw
+                </span>
+                <h4 class="work-h4">Graphic Design</h4>
+              </a>
+            </div>
+            <div class="col-md">
+              <a href="./html/photography.html">
+                <span class="material-icons work-icon">
+                  photo_camera
+                </span>
+                <h4 class="work-h4">Photography</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION-->
+  <section id="contact">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1>CONTACT</h1>
+          <br />
+          <p>Monika Ford <br />
+            Madison, WI</p>
+          <p class="icon-container">
+            <span class="material-icons mail-icon"> email </span>
+            <span>mkford4(at)gmail(dot)com</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="social">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center text-center">
+        <div class="col-lg-8">
+          <a href="https://www.linkedin.com/in/monika-ford/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/logos/linked-in-icon.png" alt="linkedin icon" class="social-logo" />
+          </a>
+          <a href="https://github.com/mkford4" target="_blank" rel="noopener noreferrer">
+            <img src="./img/logos/github-icon.png" alt="linkedin icon" class="social-logo" />
+          </a>
+          <a href="https://www.behance.net/monford" target="_blank" rel="noopener noreferrer">
+            <img src="./img/logos/behance-icon.png" alt="linkedin icon" class="social-logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="py-5 page-footer">
+    <div class="container px-4">
+      <p class="m-0 text-center text-white">&copy; Copyright 2022</p>
+      <p class="text-center text-white">Designed and developed by Monika Ford</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

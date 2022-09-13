@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monika Ford Portfolio</title>
+  <link rel="icon" type="image/png" href="../../img/logos/mf_favicon.svg" sizes="16x16" />
+
+  <link rel="stylesheet" href="../../scss/styles.scss">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+        <img src="../../img/logos/monford.png" alt="Mon Ford Logo" width="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item dropdown-active" href="../webdev.html">Web Development</a></li>
+              <li><a class="dropdown-item" href="../design.html">Graphic Design</a></li>
+              <li><a class="dropdown-item" href="../photography.html">Photography</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--CASE STUDY: MEET APP -->
+  <section id="case-study">
+    <div class="container">
+      <div class="container p-4" style="background-color: #fdfce6;">
+        <h1 style="color: #2a322a">CASE STUDY: MEET APP</h1>
+        <br />
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Overview</h3>
+            <p>
+              A serverless, progressive web application (PWA) built with React using test-driven development (TDD). The
+              meet app uses the Google Calendar API to fetch upcoming events and displays event data in various forms.
+            </p>
+            <h3>Objective</h3>
+            <p>This project was created as a part of CareerFoundry’s Full-Stack Immersion Web Development program. With
+              serverless and PWAs growing in popularity, these two concepts were the focus of this project as well as
+              utilizing a TDD approach (writing tests before writing the app’s functionality). Lastly, adding graphs to
+              the app was another aspect to learn further visualization techniques.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 p-4" style="background-color: #ffad7d">
+            <h3>Key Features</h3>
+            <ul>
+              <li>Filter events by city</li>
+              <li>Show/hide event details</li>
+              <li>Specify number of events</li>
+              <li>Use the app when offline</li>
+              <li>View a chart showing number of upcoming events by city</li>
+              <li>TDD: app must be covered by tests with a coverage rate >= 90%</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 p-4" style="background-color: #f2a2a2">
+            <h3>Tools Used</h3>
+            <ul>
+              <li>React</li>
+              <li>Google Calendar API</li>
+              <li>OAuth2 authentication flow</li>
+              <li>Serverless functions (AWS Lambda)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container p-4" style="background-color: white">
+        <img src="../../img/wd-assets/Meet-screenshot.png" class="img-fluid pt-2 pb-4" />
+        <h3>Approach</h3>
+        <h4>Client-Side</h4>
+        <p>I created the Chat App using Expo for development and testing, React Native for frontend mobile device coding
+          and Gifted Chat for designing the chat interface and functionality. Utilizing React Native’s ActionSheet, I
+          coded the custom actions for user’s to send their location, take a photo, or send an image from their device’s
+          library- via Expo’s ImagePicker & Location tools- and display it in the chat.
+          The app can be used offline using React Native’s NetInfo and AsyncStorage (client-side storage) to view
+          previous
+          chat conversations.
+        </p>
+        <h4>Server-Side</h4>
+        <p>An essential part of a modern chat application is its ability to store and save a user’s previous
+          conversation,
+          including any images shared. For this project, I utilized Google Cloud Firestore, a NoSQL document database
+          designed for creating serverless and scalable apps. The app authenticates users anonymously via Google
+          Firebase
+          authentication. Chat conversations (data including message text, message & user ID, date, location, etc) and
+          images are stored in Google Firestore Database. Messages and images, once sent, get simultaneously uploaded to
+          the cloud storage- and accessed upon initial Chat screen opening.</p>
+      </div>
+
+      <div class="container p-4" style="background-color: #b4a7d6;">
+        <h3>Challenges</h3>
+        <p>While many aspects of this project were rather straightforward, a challenge for me came with developing the
+          custom actions for users to send images and/or their location. One issue that arose was displaying the image
+          or
+          location map in the chat conversation while the other came from connecting both to the database for storage.
+          With the help of an experienced developer and mentor, I was able to get out the kinks and gained greater
+          insight
+          into using both React Native and Google Firebase congruently with each other.</p>
+        <h3>Duration</h3>
+        <p>The development of testing and, by order of user stories, backend coding of this app occurred over four
+          weeks. Frontend styling of the app was added towards the end along with the chart graphs.
+        </p>
+      </div>
+      <div class="container p-4" style="background-color: #f2a2a2;">
+        <h3>Summary & Future Steps</h3>
+        <p>Beyond the initial challenges of learning React Native’s custom actions and understanding how to best connect
+          a
+          mobile app to a cloud database, the Chat App came out as expected and desired- a high-performing mobile chat
+          app
+          for users to send messages, photos and their location.
+          Moving forward, I would like to redesign the app with a visual-centered approach including a logo and
+          consistent
+          branding. I enjoyed using Gifted Chat and look forward to further customizing the app beyond the initial
+          guidelines given, such as stylistic alterations and including a profile photo option for the user. There is
+          certainly a lot more to React Native and Gifted Chat to explore by reading through their documentation and I
+          am
+          eager to see what unique features I can add to make my app stand out from its competitors.
+        </p>
+      </div>
+    </div>
+    <div class="container p-4">
+      <a class="btn btn-primary" href="../webdev.html">Back</a>
+    </div>
+  </section>
+
+  <!-- SOCIAL FOOTER -->
+  <section id="social">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center text-center">
+        <div class="col-lg-8">
+          <a href="https://www.linkedin.com/in/monika-ford/" target="_blank" rel="noopener noreferrer">
+            <img src="../../img/logos/linked-in-icon.png" alt="linkedin icon" class="social-logo" />
+          </a>
+          <a href="https://github.com/mkford4" target="_blank" rel="noopener noreferrer">
+            <img src="../../img/logos/github-icon.png" alt="linkedin icon" class="social-logo" />
+          </a>
+          <a href="https://www.behance.net/monford" target="_blank" rel="noopener noreferrer">
+            <img src="../../img/logos/behance-icon.png" alt="linkedin icon" class="social-logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="py-5 page-footer">
+    <div class="container px-4">
+      <p class="m-0 text-center text-white">&copy; Copyright 2022</p>
+      <p class="text-center text-white">Designed and developed by Monika Ford</p>
+    </div>
+  </footer>
+
+  <script type="module" src="../../js/main.js"></script>
+</body>
+
+</html>

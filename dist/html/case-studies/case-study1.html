@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monika Ford Portfolio</title>
+  <link rel="icon" type="image/png" href="/mf_favicon.1f118bb4.svg" sizes="16x16">
+
+  <link rel="stylesheet" href="/index.044e704e.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/monford.49c03918.png" alt="Mon Ford Logo" width="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item dropdown-active" href="/html/webdev.html">Web Development</a></li>
+              <li><a class="dropdown-item" href="/html/design.html">Graphic Design</a></li>
+              <li><a class="dropdown-item" href="/html/photography.html">Photography</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--CASE STUDY: CHAT APP -->
+  <section id="case-study">
+    <div class="container">
+      <div class="container p-4" style="color: #fff; background-color: #8a95a5">
+        <h1 class="text-white">CASE STUDY: CHAT APP</h1>
+        <br>
+        <div class="row">
+          <div class="col-lg-12">
+            <h3>Overview</h3>
+            <p>A chat app developed using React Native and optimized for both Android and iOS devices. The app provides
+              users
+              with a chat interface and options to share images and their location.</p>
+            <h3>Objective</h3>
+            <p>This project was created as a part of CareerFoundry’s Full-Stack Immersion Web Development program for
+              use
+              in
+              my portfolio and gaining experience developing with React Native, a common tool used to create mobile
+              applications, as well as server-side experience storing data with Google Firestore.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 p-4" style="background-color: #e8c4d6">
+            <h3>Key Features</h3>
+            <ul>
+              <li>A page where users can enter their username and choose a background color before joining the chat</li>
+              <li>A page displaying the conversation, as well as an input field and “send” button</li>
+              <li>A custom feature providing users with the capability to send images and location</li>
+              <li>Data gets stored online and offline</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 p-4" style="background-color: #b9c6ae">
+            <h3>Tools Used</h3>
+            <ul>
+              <li>React Native</li>
+              <li>Gifted Chat</li>
+              <li>Expo</li>
+              <li>Google Firestore (v7)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container p-4" style="background-color: #fff">
+        <h3>Approach</h3>
+        <h4>Client-Side</h4>
+        <p>I created the Chat App using Expo for development and testing, React Native for frontend mobile device coding
+          and Gifted Chat for designing the chat interface and functionality. Utilizing React Native’s ActionSheet, I
+          coded the custom actions for user’s to send their location, take a photo, or send an image from their device’s
+          library- via Expo’s ImagePicker & Location tools- and display it in the chat.
+          The app can be used offline using React Native’s NetInfo and AsyncStorage (client-side storage) to view
+          previous
+          chat conversations.
+        </p>
+        <h4>Server-Side</h4>
+        <p>An essential part of a modern chat application is its ability to store and save a user’s previous
+          conversation,
+          including any images shared. For this project, I utilized Google Cloud Firestore, a NoSQL document database
+          designed for creating serverless and scalable apps. The app authenticates users anonymously via Google
+          Firebase
+          authentication. Chat conversations (data including message text, message & user ID, date, location, etc) and
+          images are stored in Google Firestore Database. Messages and images, once sent, get simultaneously uploaded to
+          the cloud storage- and accessed upon initial Chat screen opening.</p>
+        <img src="/chat-app-screenshot.b0752c99.jpg" class="img-fluid pt-2 pb-4">
+      </div>
+
+      <div class="container p-4" style="background-color: #b9c6ae">
+        <h3>Challenges</h3>
+        <p>While many aspects of this project were rather straightforward, a challenge for me came with developing the
+          custom actions for users to send images and/or their location. One issue that arose was displaying the image
+          or
+          location map in the chat conversation while the other came from connecting both to the database for storage.
+          With the help of an experienced developer and mentor, I was able to get out the kinks and gained greater
+          insight
+          into using both React Native and Google Firebase congruently with each other.</p>
+        <h3>Duration</h3>
+        <p>The frontend and backend aspects of this app were created synchronously over the course of 4 weeks as sole
+          web
+          developer on the project.
+        </p>
+      </div>
+      <div class="container p-4" style="color: #fff; background-color: #8a95a5">
+        <h3 class="text-white">Summary & Future Steps</h3>
+        <p>Beyond the initial challenges of learning React Native’s custom actions and understanding how to best connect
+          a
+          mobile app to a cloud database, the Chat App came out as expected and desired- a high-performing mobile chat
+          app
+          for users to send messages, photos and their location.
+          Moving forward, I would like to redesign the app with a visual-centered approach including a logo and
+          consistent
+          branding. I enjoyed using Gifted Chat and look forward to further customizing the app beyond the initial
+          guidelines given, such as stylistic alterations and including a profile photo option for the user. There is
+          certainly a lot more to React Native and Gifted Chat to explore by reading through their documentation and I
+          am
+          eager to see what unique features I can add to make my app stand out from its competitors.
+        </p>
+        <p class="italicized">A note: As part of a course curriculum, the guidelines for the project required using
+          Google
+          Firebase version 7 whereas Google has updated Firebase to version 9 as of 2022. While not an issue during
+          development, it could become one due to using outdated storage implementation. If re-creating this app, I
+          would
+          try again using the updated version 9 as the app’s serverless storage option.
+        </p>
+      </div>
+    </div>
+    <div class="container p-4">
+      <a class="btn btn-primary" href="/html/webdev.html">Back</a>
+    </div>
+  </section>
+
+  <!-- SOCIAL FOOTER -->
+  <section id="social">
+    <div class="container px-4">
+      <div class="row gx-4 justify-content-center text-center">
+        <div class="col-lg-8">
+          <a href="https://www.linkedin.com/in/monika-ford/" target="_blank" rel="noopener noreferrer">
+            <img src="/linked-in-icon.23642160.png" alt="linkedin icon" class="social-logo">
+          </a>
+          <a href="https://github.com/mkford4" target="_blank" rel="noopener noreferrer">
+            <img src="/github-icon.0b7923cc.png" alt="linkedin icon" class="social-logo">
+          </a>
+          <a href="https://www.behance.net/monford" target="_blank" rel="noopener noreferrer">
+            <img src="/behance-icon.ce61ee42.png" alt="linkedin icon" class="social-logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="py-5 page-footer">
+    <div class="container px-4">
+      <p class="m-0 text-center text-white">&copy; Copyright 2022</p>
+      <p class="text-center text-white">Designed and developed by Monika Ford</p>
+    </div>
+  </footer>
+
+  <script src="/index.18dbc454.js" defer=""></script>
+</body>
+
+</html>

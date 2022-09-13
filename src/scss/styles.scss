@@ -1,0 +1,439 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+// Core Styling //
+:root {
+  --primary-color: #2a322a;
+  --secondary-color: #093407;
+  --footer-color: #336633;
+  --background-color: #dddbc6;
+  --purple: #a588c3;
+  --light-purple: #c9c0d3;
+  --dark-purple: #766093;
+  --link-color: #9c4895;
+  --link-used-color: #05676e;
+  --link-active-color: #489c79;
+  --standard-font-weight: 500;
+  --yellow: #b49951;
+  --light-green: #7eb77e;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: var(--standard-font-weight);
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--primary-color);
+  padding-top: 60px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 54px;
+  color: var(--secondary-color);
+  letter-spacing: 1.5px;
+}
+
+.big {
+  font-size: 102px;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: var(--standard-font-weight);
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: var(--standard-font-weight);
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: var(--standard-font-weight);
+}
+
+h5 {
+  font-weight: 600;
+}
+
+.img-100 {
+  width: 100%;
+}
+
+.italicized {
+  font-style: italic;
+  font-weight: 400;
+}
+
+// COMPONENTS // 
+.btn-primary {
+  background-color: var(--dark-purple);
+  border: var(--dark-purple);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--yellow);
+}
+
+.btn-secondary {
+  background-color: var(--yellow);
+  border: var(--yellow);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--dark-purple);
+}
+
+.back-btn:focus {
+  background-color: var(--primary-color);
+}
+
+a {
+  /* links */
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:visited {
+  /* visited link */
+  color: var(--link-used-color);
+}
+
+a:active {
+  /* selected link */
+  color: var(--link-active-color);
+}
+
+a.btn {
+  color: white;
+}
+
+hr {
+  color: var(--secondary-color);
+}
+
+// NAVBAR //
+a.dropdown-item {
+  color: var(--primary-color);
+}
+
+.navbar-nav>.nav-item>.nav-link,
+.navbar-nav>.nav-item>.nav-link a:active {
+  color: var(--primary-color);
+}
+
+.navbar-nav>.nav-item a:hover {
+  font-weight: 600;
+  font-size: 105%;
+  transition: 0.2s;
+}
+
+.navbar-nav>li>.dropdown-menu,
+.navbar-nav>li>.dropdown-menu a:active {
+  color: var(--primary-color);
+}
+
+.navbar-nav>li>.dropdown-menu a:hover {
+  background-color: var(--light-purple);
+  color: var(--primary-color);
+}
+
+// MATERIAL ICONS // 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 36px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+// HOME section styling //
+header {
+  background-color: var(--background-color);
+  padding-top: 6rem;
+  padding-bottom: 9rem;
+}
+
+//ABOUT section //
+#about {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+// WORK section //
+#work {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--background-color);
+}
+
+.work-icon {
+  color: var(--secondary-color);
+  padding: 1rem;
+}
+
+.work-icon:hover,
+.work-icon:focus {
+  color: var(--light-green);
+  transform: scale(1.5);
+}
+
+.work-h4 {
+  color: var(--secondary-color);
+}
+
+//CONTACT section //
+
+#contact {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-icon {
+  margin-right: 0.2em;
+  padding: 0;
+  color: var(--footer-color);
+  font-size: 2em;
+}
+
+// SOCIAL & FOOTER // 
+.page-footer {
+  background-color: var(--secondary-color);
+}
+
+#social {
+  background-color: var(--footer-color);
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.social-logo {
+  width: 2.5rem;
+  margin: 0 1rem 0 1rem;
+}
+
+//---- PORTFOLIO PAGES --------// 
+#title {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+#title-alt {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#title-alt-white {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.page-header {
+  background-color: var(--background-color);
+}
+
+// WEBDEV PORTFOLIO // 
+#web-dev {
+  background-color: var(--background-color);
+}
+
+.card {
+  margin: 0.8rem;
+  box-shadow: 10px 10px 3px var(--yellow);
+}
+
+.card-deck {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.featured-card {
+  margin-bottom: 2rem;
+}
+
+.featured-img {
+  padding: 0.5rem;
+}
+
+.card-header {
+  background-color: var(--yellow);
+}
+
+#case-study {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: var(--background-color)
+}
+
+// PHOTOGRAPHY //
+.nav-text {
+  color: var(--footer-color) !important;
+}
+
+.nav-text:hover {
+  border: solid 2px white !important;
+}
+
+.btn-gallery {
+  background-color: var(--yellow);
+  border: var(--yellow);
+  margin: 1rem;
+  padding-top: 0.8rem;
+}
+
+.btn-gallery:hover,
+.btn-gallery:focus {
+  background-color: var(--light-purple);
+}
+
+.gallery {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.section-b {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: var(--background-color)
+}
+
+.section-a {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: white;
+}
+
+.section-c {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-color: var(--light-purple);
+}
+
+
+.carousel-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  line-height: 1;
+  width: 100%;
+}
+
+// GRAPHIC DESIGN //
+.icon {
+  width: 100px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.project {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#project-1 {
+  background-color: var(--purple);
+}
+
+#project-2 {
+  background-color: var(--light-purple);
+}
+
+#project-3 {
+  background-color: var(--light-green);
+}
+
+#project-4 {
+  background-color: var(--background-color);
+}
+
+#project-5 {
+  background-color: var(--yellow);
+}
+
+#design-section-1 {
+  background-color: var(--background-color);
+}
+
+#design-section-2 {
+  background-color: white;
+}
+
+#design-section-3 {
+  background-color: var(--light-purple);
+}
+
+#design-section-4 {
+  background-color: var(--light-green);
+  color: white;
+}
+
+#design-section-5 {
+  background-color: var(--yellow);
+  color: white;
+}
+
+#design-section {
+  background-color: var(--purple);
+  color: white;
+}
+
+.arrow-icon {
+  margin-right: 0.2em;
+  padding: 0;
+  color: white;
+  font-size: 2em;
+}
+
+//YUMPU FLIPBOOK //
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// MEDIA QUERIES //
