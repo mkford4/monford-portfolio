@@ -15,7 +15,8 @@
   --link-active-color: #489c79;
   --standard-font-weight: 500;
   --yellow: #b49951;
-  --light-green: #7eb77e;
+  --light-green: #95c895;
+  --light-yellow: #c9b47b;
 }
 
 body {
@@ -393,7 +394,7 @@ header {
 }
 
 #project-5 {
-  background-color: var(--yellow);
+  background-color: var(--light-yellow);
 }
 
 #design-section-1 {
@@ -410,17 +411,14 @@ header {
 
 #design-section-4 {
   background-color: var(--light-green);
-  color: white;
 }
 
 #design-section-5 {
-  background-color: var(--yellow);
-  color: white;
+  background-color: var(--light-yellow);
 }
 
 #design-section {
   background-color: var(--purple);
-  color: white;
 }
 
 .arrow-icon {
